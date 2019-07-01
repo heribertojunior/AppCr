@@ -1,0 +1,36 @@
+<ion-content
+  padding
+  color="danger"
+>
+  <h1 text-center>
+        <ion-icon
+      name="logo-reddit"
+      color="warning"
+      class="icon-7em"
+    ></ion-icon>
+    </h1>
+  <Form
+    [formGroup]="authForm"
+    (submit)="onSubmit(authForm)"
+  >
+    <ion-button
+      expand="block"
+      fill="clear"
+      color="warning"
+      (click)="ChangeAuthAction()"
+    >
+      {{configs.actionChange}}
+    </ion-button>
+    <ion-button
+      expand="block"
+      color="warning"
+    >
+      <ion-icon
+        name="logo-facebook"
+        slot="start"
+      ></ion-icon>
+      Logar com face
+    </ion-button>
+
+  </Form>
+</ion-content>
